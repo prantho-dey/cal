@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/fav.svg" type="image/gif" sizes="18x18">
+    <title>CAL</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <section class="cal-section">
+        <div class="cal-popup">
+            <div class="cal-popup-left">
+                <img src="./assets/img/author.png" alt="author">
+                <p class="cal-popup-name">Prantho</p>
+                <h4 class="cal-popup-title">The better way</h4>
+                <p class="cal-popup-description">A fully customizable scheduling software for individuals.</p>
+                <div class="cal-popup-left-infoGroup">
+                    <div class="single-info">
+                        <img src="./assets/img/clock.svg" alt="clock">
+                        <span>45 mins</span>
+                    </div>
+                    <div class="single-info">
+                        <img src="./assets/img/user.svg" alt="user">
+                        <span>3 users</span>
+                    </div>
+                    <div class="single-info">
+                        <img src="./assets/img/location.svg" alt="location">
+                        <span>Bangladesh/Sylhet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cal-calendar">
+                <div class="cal-calendar-header">
+                    <p class="current-date"></p>
+                    <div class="icons">
+                        <button id="prev"><img src="./assets/img/arrow-left.svg" alt="arrow"></button>
+                        <button id="next"><img src="./assets/img/arrow-right.svg" alt="arrow"></button>
+                    </div>
+                </div>
+                <div class="calendar">
+                  <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                  </ul>
+                  <ul class="days"></ul>
+                </div>
+            </div>
+            <div class="cal-time">
+                <div class="cal-time-header">
+                    <p class="current-time"></p>
+                    <div class="cal-time-nav">
+                        <button class="cal-time-nav-btn active" data-tab="tab1">12h</button>
+                        <button class="cal-time-nav-btn" data-tab="tab2">24h</button>
+                    </div>
+                </div>
+                <div class="cal-time-tab">
+                    <div id="tab1" class="cal-time-tab-content active">
+                        <button>9:00am</button>
+                        <button>9:15am</button>
+                        <button>9:30am</button>
+                        <button>9:45am</button>
+                        <button>10:00am</button>
+                        <button>10:15am</button>
+                        <button>10:30am</button>
+                        <button>10:45am</button>
+                        <button>10:00am</button>
+                        <button>10:15am</button>
+                        <button>10:30am</button>
+                        <button>10:45am</button>
+                        <button>11:00am</button>
+                        <button>11:15am</button>
+                        <button>11:30am</button>
+                        <button>11:45am</button>
+                        <button>12:pm</button>
+                        <button>12:15pm</button>
+                        <button>12:30pm</button>
+                        <button>12:45pm</button>
+                        <button>1:00pm</button>
+                        <button>1:15pm</button>
+                        <button>1:30pm</button>
+                        <button>1:45pm</button>
+                        <button>2:00pm</button>
+                        <button>2:15pm</button>
+                        <button>2:30pm</button>
+                        <button>2:45pm</button>
+                        <button>3:00pm</button>
+                        <button>3:15pm</button>
+                        <button>3:30pm</button>
+                        <button>3:45pm</button>
+                        <button>4:00pm</button>
+                        <button>4:15pm</button>
+                        <button>4:30pm</button>
+                        <button>4:45pm</button>
+                    </div>
+                    <div id="tab2" class="cal-time-tab-content active">
+                        <button>9:00</button>
+                        <button>9:15</button>
+                        <button>9:30</button>
+                        <button>9:45</button>
+                        <button>10:00</button>
+                        <button>10:15</button>
+                        <button>10:30</button>
+                        <button>10:45</button>
+                        <button>10:00</button>
+                        <button>10:15</button>
+                        <button>10:30</button>
+                        <button>10:45</button>
+                        <button>11:00</button>
+                        <button>11:15</button>
+                        <button>11:30</button>
+                        <button>11:45</button>
+                        <button>12:00</button>
+                        <button>12:15</button>
+                        <button>12:30</button>
+                        <button>12:45</button>
+                        <button>13:00</button>
+                        <button>13:15</button>
+                        <button>13:30</button>
+                        <button>13:45</button>
+                        <button>14:00</button>
+                        <button>14:15</button>
+                        <button>14:30</button>
+                        <button>14:45</button>
+                        <button>15:00</button>
+                        <button>15:15</button>
+                        <button>15:30</button>
+                        <button>15:45</button>
+                        <button>16:00</button>
+                        <button>16:15</button>
+                        <button>16:30</button>
+                        <button>16:45</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./assets/style.js"></script>
+</body>
+</html>
