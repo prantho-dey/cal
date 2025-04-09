@@ -65,3 +65,4 @@ const timeEl = document.querySelector(".current-time");
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const today = new Date();
 timeEl.textContent = `${days[today.getDay()]}`;
+

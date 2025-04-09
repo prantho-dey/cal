@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/fav.svg" type="image/gif" sizes="18x18">
+    <title>CAL</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <section class="cal-section">
+        <div class="cal-popup next-step-wrapper">
+            <div class="cal-popup-left next-step-left">
+                <img src="./assets/img/author.png" alt="author">
+                <p class="cal-popup-name">Prantho</p>
+                <h4 class="cal-popup-title">The better way</h4>
+                <p class="cal-popup-description">A fully customizable scheduling software for individuals.</p>
+                <div class="cal-popup-left-infoGroup">
+                    <div class="single-info">
+                        <img src="./assets/img/clock.svg" alt="clock">
+                        <span>45 mins</span>
+                    </div>
+                    <div class="single-info">
+                        <img src="./assets/img/user.svg" alt="user">
+                        <span>3 users</span>
+                    </div>
+                    <div class="single-info">
+                        <img src="./assets/img/location.svg" alt="location">
+                        <span>Bangladesh/Sylhet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="next-stap-wrap">
+                <form>
+                    <div class="single-input-wrap">
+                        <label>Your name *</label>
+                        <input type="text" placeholder="Prantho Dey" required>
+                    </div>
+                    <div class="single-input-wrap">
+                        <label>Email address *</label>
+                        <input type="email" placeholder="pranthodey89@gmail.com" required>
+                    </div>
+                    <div class="custom-radio-group">
+                        <label for="member-1" class="custom-radio">
+                            <input type="radio" id="member-1" name="member">
+                            individual
+                        </label>
+                        <label for="member-2" class="custom-radio">
+                            <input type="radio" id="member-2" name="member">
+                            Group
+                        </label>    
+                    </div>
+                    <div class="single-input-wrap gest-input">
+                        <input type="number" placeholder="Number of guests" value="2">
+                    </div>
+                    <div class="single-input-wrap">
+                        <label>Additional notes</label>
+                        <textarea placeholder="Please share anything that will help prepare for our meeting"></textarea>
+                    </div>
+                </form>
+                <a href="#" class="add-guest-btn">
+                    <img src="./assets/img/usr-plus.svg" alt="user-plus">
+                    <span>Add guests</span>
+                </a>
+                <p class="by-proceeding">By proceeding, you agree to out <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+                <div class="next-step-btns">
+                    <a class="back-button" href="index.html">Back</a>
+                    <a class="confirm-button" href="thankyou.html">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const member1 = document.getElementById('member-1');
+            const member2 = document.getElementById('member-2');
+            const guestInput = document.querySelector('.gest-input');
+        
+            member1.addEventListener('change', function () {
+                if (member1.checked) {
+                    guestInput.style.display = 'none';
+                }
+            });
+        
+            member2.addEventListener('change', function () {
+                if (member2.checked) {
+                    guestInput.style.display = 'block';
+                }
+            });
+        });
+    </script>
+        
+    <script src="./assets/style.js"></script>
+</body>
+</html>
